@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages International</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@400;500&display=swap');
+  :root {
+        --nav-bg-color: #006666;
+        --secondary-color: #cc9933;
+        --text-primary: #ffffff;
+        --content-padding: 10% 0;
+    }
+    body{
+      font-size: 18px;
+      font-weight: 300px;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .navbar{
+      background-color: var(--nav-bg-color);
+      font-size: 17px;
+    }
+    .navbar-nav,.nav-link{
+      margin-right: 30px;
+    }
+    .fa-brands{
+      color: var(--text-primary);
+      margin: 10px;
+    }
+    .intro__text,.intro-text{
+      font-size: 14px;
+    }
+    /* hero-section */
+    .hero__img{
+      padding-left: -0px;
+    }
+    .hero__header,.hero__text,.hero-text,.hero__btn{
+      text-align: center;
+    }
+    .hero__header,.mailing-header,.about__header,.course__header,.connect__h4,.assessment__header{
+      font-weight: 500;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Playfair Display', serif;
+    }
+    .colored-section{
+      padding-right: 20px;
+      background-color: #006666;
+    }
+    /* mailing section */
+    .mailing__section{
+      position: relative;
+      height: 180px;
+      border-radius: 0;
+      background-color: #cc9933;
+    }
+    .mailing__btn{
+     color: var(--nav-bg-color);
+    }
+    /* about section   */
+    .stages__one{
+      background-color: #cc6666;
+      color: var(--text-primary);
+    }
+    .stages__two,.hero__btn,.stages__btn,.assessment__btn,.stage-two__btn{
+      font-family: 'Open Sans', sans-serif;
+      border: 0;
+      border-radius: 0%;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 1;
+      background-color: #cc9933;
+      color: var(--text-primary);
+    }
+    .stages__three{
+      background-color: #669999;
+      color: var(--text-primary);
+    } 
+    /* assessment section */
+    .assessment__bg{
+      background-color: #2c537e;
+    }
+    
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages International</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@400;500&display=swap');
+  :root {
+        --nav-bg-color: #006666;
+        --secondary-color: #cc9933;
+        --text-primary: #ffffff;
+        --content-padding: 10% 0;
+    }
+    body{
+      font-size: 18px;
+      font-weight: 300px;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .navbar{
+      background-color: var(--nav-bg-color);
+      font-size: 17px;
+    }
+    .navbar-nav,.nav-link{
+      margin-right: 30px;
+    }
+    .fa-brands{
+      color: var(--text-primary);
+      margin: 10px;
+    }
+    .intro__text,.intro-text{
+      font-size: 14px;
+    }
+    /* hero-section */
+    .hero__img{
+      padding-left: -0px;
+    }
+    .hero__header,.hero__text,.hero-text,.hero__btn{
+      text-align: center;
+    }
+    .hero__header,.mailing-header,.about__header,.course__header,.connect__h4,.assessment__header{
+      font-weight: 500;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Playfair Display', serif;
+    }
+    .colored-section{
+      padding-right: 20px;
+      background-color: #006666;
+    }
+    /* mailing section */
+    .mailing__section{
+      position: relative;
+      height: 180px;
+      border-radius: 0;
+      background-color: #cc9933;
+    }
+    .mailing__btn{
+      background-color: #006666;
+      border-radius: 0;
+    }
+    /* about section   */
+    .stages__one{
+      background-color: #cc6666;
+      color: var(--text-primary);
+    }
+    .stages__two,.hero__btn,.Stages__btn,.assessment__btn{
+      font-family: 'Open Sans', sans-serif;
+      border: 0;
+      border-radius: 0%;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 1;
+      background-color: #cc9933;
+      color: var(--text-primary);
+    }
+  
+    .stages__three{
+      background-color: #669999;
+      color: var(--text-primary);
+    }
+    /* course section */
+    .stages1__btn{
+      background-color: #cc6666;
+      color: var(--text-primary);
+      border-radius: 0;
+      margin-top: 163px;
+      width:200px;
+    }
+    .stages__btn{
+      background-color: #cc9933;
+      border-radius: 0;
+      margin-top: 180px;
+      width:200px;
+    }
+    .stages3__btn{
+      background-color: #669999;
+      color: var(--text-primary);
+      border-radius: 0;
+      margin-top: 83px;
+      width:200px;
+    }
+
+    /* connect sectiob */
+    #connect{
+      background-color: #cc6666;
+      color: var(--text-primary);
+      height: 200px;
+    }
+    .connect__btn{
+      background-color: #cc9933;
+      border-radius: 0;
+    }
+
+    /* assessment section */
+    #assessment__img{
+      width: 1250px;
+      height: 450px;
+    }
+
+    /* email section */
+    #email__text{
+      background-color: var(--secondary-color);
+      color: var(--text-primary);
+    }
+    #email__p{
+      background-color: var(--nav-bg-color);
+      color: var(--text-primary);
+    }
+    .email__form{
+      background-color: #F2F2F2;
+      box-shadow: 5px 5px 5px #87878740;
+      opacity: 3;
+      width: 500px;
+      height:250px;
+    }
+    /* footer section */
+    #footer{
+      background-color: var(--nav-bg-color);
+    }
+   
+  
+</style>
+<body>
+
+    <div class="navigations">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container nav__container">
+              
+              <img src="logo.png" alt="" class="logo__text" width="150px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-end flex-grow-1 pt-3  mb-2">
+                  <a class="nav-link active text-white" aria-current="page" href="#">LEARN</a>
+                  <a class="nav-link active text-white" href="#">CONNECT</a>
+                  <a class="nav-link active text-white" href="#">ABOUT</a>
+                  <a class="nav-link active text-white" href="#">YOUR DASHBOARD</a> 
+                  <a href="facebook-link"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="instagram-link"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="linkedin-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+       <!-- intro section -->
+       <section id="hero" class="plain-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="intro__text mt-3">Stages International Was founded by Terri O'Fallon, PhD and Kim Barta, MA in 2015 to offer training and resources informed by the STAGES Model of Human development</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="intro-text mt-3 text-end">608 NE Washington Lewiston, NT 59457</p> 
+                </div>
+            </div>
+        </div>
+    </section>
+  <!--  hero section -->
+  <section id="hero" class="colored-section">
+    <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+            <div class="hero__img col-12 col-md-6"><img src="Hero_Image.png" alt="hero__img" class="img-fluid"></div>
+            <div class=" hero__text col-12 col-md-6">
+              <div class="hero-text1">
+                <h1 class="hero__header text-white">Who Am I Now?</h1>
+                <p class="hero__text text-white">The old me can be confusing.</p>
+                <p class="hero-text text-white  ">Learning about developmental confusions can help us to<br>discover a deeper identity-one that is wiser, more fullfilling<br>and interconnected.</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class=" hero__btn btn btn-warning text-white" type="button">DISCOVER YOUR DEEP IDENTITY</button>
+                </div>
+              </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- mailing section -->
+   <section id="mailing" class="plain-section">
+    <div class="container mailing__section mt-3">
+      <div class="flex text-center">
+        <h4 class="mailing-header text-white">Join Our Mailing List</h4>
+        <p class="mailing-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="forms">
+        <div class="d-flex justify-content-center mb-3">
+          <form class="row g-3">
+            <div class="col-auto">
+             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+            </div>
+            <div class="col-auto">
+             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+            </div>
+            <div class="col-auto">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="mailing__btn btn btn-primary text-white" type="submit">SUBSCRIBE</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- about section -->
+ <section id="about" class="plain-section">
+  <h1 class="about__header text-center mb-3">What is Stages?</h1>
+<div class="container card-group text-center">
+  <div class="stages__one card m-3">
+    <img src="STAGES1.png" class="stage__img-one" alt="stage_img">
+    <div class="card-body">
+      <p class="about__text">Life puts in front of us a primary confusion that stops us in our tracks--</p>
+      <p class="about-text">Who have I been? Who am I now? Who am I becoming?</p>
+    </div>
+  </div>
+  <div class="stages__two card m-3">
+    <img src="STAGES2.png" class="stage__img-one" alt="stage_img">
+    <div class="card-body">
+      <p class="about__text">Life puts in front of us a primary confusion that stops us in our tracks--</p>
+      <p class="about-text">Who have I been? Who am I now? Who am I becoming?</p>
+    </div>
+  </div>
+  <div class="stages__three card m-3">
+    <img src="STAGES3.png" class="stage__img-one" alt="stage_img">
+    <div class="card-body">
+      <p class="about__text">Life puts in front of us a primary confusion that stops us in our tracks--</p>
+      <p class="about-text">Who have I been? Who am I now? Who am I becoming?</p>
+    </div>
+  </div>
+</section>
+
+<div class="about__btn text-center"><button type="button" class="Stages__btn btn btn-warning text-white">DISCOVER YOUR DEEPER IDENTITY</button></div>
+ <!-- course section -->
+ <section id="course" class="plain-section">
+  <div class="text-container text-center mt-5">
+<em class="course-em">Begin your developmental journey</em>
+<h1 class="course__header">Stages Online Courses</h1>
+  </div>
+<div class="container card-group text-center">
+  <div class="card m-3">
+    <img src="STAGES_Illustrations_1.png" class="stage__img-one" alt="stage_img">
+    <div class="card-body">
+      <h4 class="course__header">The Three Questions</h4>
+      <p class="course__text">Discovering Who You Are</p>
+      <p class="course-text">eeply into your present identity. However, we know that we constantly change, so we can continue to ask these three questions throughout our lives to discover who the "new me" is.</p>
+      <div class="about__btn text-center"><button type="button" class="stages1__btn btn btn-danger text-white">LEARN MORE</button></div>
+    </div>
+  </div>
+  <div class="card m-3">
+    <img src="STAGES_Illustrations_2.png" class="stage__img-two" alt="stage_img">
+    <div class="card-body">
+      <h4 class="course__header">Developmental Confusions</h4>
+      <p class="course__text">The second course in this series "Developmental Confusions" will describe the primary confusion at each development stage that we must solve in order to continue into our emerging identity.</p>
+      <div class="about__btn text-center"><button type="button" class="stages__btn btn btn-warning text-white">LEARN MORE</button></div>
+    </div>
+  </div>
+  
+  <div class="card m-3">
+    <img src="STAGES_Illustrations_3.png " class="stage__img-three" alt="stage_img">
+    <div class="card-body">
+      <h4 class="course__header">Mind's I</h4>
+      <p class="course__text">12 Month Developmental Journey</p>
+      <p class="course-text">The third course in this series "The Mind's I" will lead us through the journey of our life's path in practical ways. It combines the past, present, and future identities we navigate through and confronts the healthy confusion we meet and overcome at each stage.</p>
+      <div class="about__btn text-center"><button type="button" class="stages3__btn btn btn-info text-white">LEARN MORE</button></div>
+    </div>
+  </div>
+</section>
+<!-- connect section -->
+<section id="connect" class="plain-section">
+  <div class="container text-center">
+    <h4 class="connect__h4">Get Connected to a Stages Coach</h4>
+    <p class="connect__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac pharetra sapien, at tempus eros. Nulla cursus scelerisque semper. Integer commodo nibh elit, non lobortis nulla sollicitudin eu.</p>
+    <button type="button" class=" connect__btn btn btn-warning text-white">CONNECT NOW</button>
+  </div>
+</section>
+<!-- assessment section -->
+<section id="assessment" class="plain-section mt-3">
+  <div class="assessment__bg container-fluid">
+      <div class="row d-flex align-items-center">
+          <div class="col-6 col-md-6">
+              <img id="assessment__img" class="img" src="STAGES_Form_Image.png" alt="Assessment Image" width=>
+          </div>
+          <div class="col-8 col-md-4">
+            <h1 class="assessment__header mb-5 text-white">STAGES Assessments</h1>
+            <p class="assessment__text text-white">There is power in perspective. Our scientifically backed assessments are now available with courses so you can learn your developmental level & unlock your full potential. Assessments are at the heart of STAES. Take your assessment and get connected with a trained professional scorer.</p>
+            <button type="button" class="assessment__btn btn btn-warning text-white">LEARN ABOUT STAGES ASSESSMENTS</button>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- email section -->
+<section id="section" class="email__section">
+  <div class="container mt-2">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div id="email__text" class="col-6 col-md-4 text-center m-3">
+          <h3 class="email__header">Get in Touch</h3>
+          <div id="email__p">
+          <p>Reach out and say Hello!<br>We'd love to hear from you</p>
+          <p><small>Email us at:<br>Support@stagesinternational.com</small></p>
+        </div>
+      </div>
+    <div class="email__form col-6 col-md-4 text-center mb-3 mt-2">
+      <form class="row g-3">
+        <div class="col-auto">
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+        </div>
+        <div class="col-auto">
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here..."></textarea>
+        </div>
+        <div class="email__btn"><button type="button" class="btn btn-warning text-white btn-md mb-3">SEND</button></div>
+  </div>
+</section>
+<!-- footer section -->
+<section id="footer" class="footer">
+  <div class="container text-white">
+      <div class="row d-flex align-items-center">
+          <div class="col-12 col-md-6">
+              <p class="footer__title">@2021 J STAGES International. All rights reserved, M Copyrights STAGES International LCC C | (406) 272-6238</p>
+          </div>
+          <div class="col-12 col-md-6">
+              <p class="footer__title-2 text-end">Privacy | Terms and Conditions</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
